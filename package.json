@@ -1,0 +1,9 @@
+{
+  "name": "ph-todo-db",
+  "version": "0.1.0",
+  "description": "DB worker for the ph-todo-example",
+  "main": "index.js",
+  "repository": "https://github.com/PinkHippos/ph-todo-db.git",
+  "author": "chippawah <charles.cantrell@me.com>",
+  "license": "Apache-2.0"
+}
