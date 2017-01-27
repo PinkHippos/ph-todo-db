@@ -5,5 +5,17 @@
   "main": "index.js",
   "repository": "https://github.com/PinkHippos/ph-todo-db.git",
   "author": "chippawah <charles.cantrell@me.com>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "json-fn": "^1.1.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "q": "^1.4.1",
+    "rethinkdb": "^2.3.3",
+    "seneca": "^3.2.2",
+    "seneca-amqp-transport": "^2.1.0",
+    "seneca-legacy-logger": "^0.1.0",
+    "thinky": "^2.3.8"
+  }
 }
