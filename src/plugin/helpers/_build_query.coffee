@@ -3,7 +3,7 @@
 
 act = require "#{__dirname}/../../seneca/act"
 models = require "#{__dirname}/../../models"
-{r} = require "#{__dirname}/../../db_config"
+{r} = require "#{__dirname}/../../db_instance"
 
 ##### _parse_query #####
 # Converts string query into valid js
