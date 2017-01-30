@@ -1,8 +1,3 @@
-q = require 'q'
-moment = require 'moment'
-models = require "#{__dirname}/models"
-{r} = require "#{__dirname}/db_config"
-act = require "#{__dirname}/seneca_config/act"
 module.exports = (options)->
   patterns =
     create:
@@ -42,5 +37,4 @@ module.exports = (options)->
     fn = require "#{__dirname}/#{pattern}"
     console.log 'PATTERN', val
     console.log 'FN', fn
-
     @add val, require "#{__dirname}/#{pattern}"
