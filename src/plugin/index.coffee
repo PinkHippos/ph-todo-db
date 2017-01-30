@@ -32,9 +32,9 @@ module.exports = (options)->
       # model: string
       # cb: function
 
-  for pattern, val of patterns
+  for pattern_name, val of patterns
     val.role = 'db'
-    fn = require "#{__dirname}/#{pattern}"
+    fn = require "#{__dirname}/#{pattern_name}"
     console.log 'PATTERN', val
     console.log 'FN', fn
-    @add val, require "#{__dirname}/#{pattern}"
+    @add val, require "#{__dirname}/#{pattern_name}"
