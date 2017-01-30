@@ -6,4 +6,4 @@ Todo = createModel 'Todo',
   status: type.string()
     .default('new')
     .enum ['new', 'inProgress', 'complete']
-  userID: type.string()
+  author: type.string()
