@@ -37,4 +37,6 @@ module.exports = (options)->
     fn = require "#{__dirname}/#{pattern_name}"
     console.log 'PATTERN', val
     console.log 'FN', fn
+    # Add each of the patterns and respective callbacks
+    # to register them with seneca for use elsewhere
     @add val, require "#{__dirname}/#{pattern_name}"
