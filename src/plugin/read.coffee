@@ -1,5 +1,6 @@
+{assign} = require 'lodash'
+_handle_error = require "#{__dirname}/helpers/_handle_error"
 _build_query = require "#{__dirname}/helpers/_build_query"
-
 module.exports = (args, done)->
   {model, query} = args
   if !model or !query
