@@ -27,16 +27,14 @@ module.exports = (options)->
       # query:
       #   primary_key: string
       #   filters: object
-    watch:
+    watch_feed:
       cmd: 'watch_feed'
       # model: string
       # cb: function
 
   for pattern_name, val of patterns
     val.role = 'db'
-    fn = require "#{__dirname}/#{pattern_name}"
-    console.log 'PATTERN', val
-    console.log 'FN', fn
     # Add each of the patterns and respective callbacks
     # to register them with seneca for use elsewhere
     @add val, require "#{__dirname}/#{pattern_name}"
+  'db'
