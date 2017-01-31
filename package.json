@@ -16,6 +16,7 @@
     "seneca": "^3.2.2",
     "seneca-amqp-transport": "^2.1.0",
     "seneca-legacy-logger": "^0.1.0",
+    "tcp-ping": "^0.1.1",
     "thinky": "^2.3.8"
   }
 }
