@@ -18,7 +18,7 @@ module.exports = (args, done)->
       done null, err: builtErr
   else
     # Save the raw query for later logging
-    raw_query = assign {}, query
+    raw_query = if query != 'all' then assign {}, query else 'all'
 
     # Build and run the query
     _build_query query, model
