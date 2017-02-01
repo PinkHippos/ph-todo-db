@@ -1,3 +1,4 @@
+act = require "#{__dirname}/../seneca/act"
 ##### watchModelFeed #####
 # Watches a model table for changes and handles with cb if provided
 # @params: model -> string ('Todo', 'User')

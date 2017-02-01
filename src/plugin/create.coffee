@@ -2,7 +2,7 @@ moment = require 'moment'
 
 models = require "#{__dirname}/../models"
 _handle_error = require "#{__dirname}/helpers/_handle_error"
-
+act = require "#{__dirname}/../seneca/act"
 module.exports = (args, done) ->
   {model, insert, saveAll} = args
   if !model or !insert

@@ -1,4 +1,7 @@
+{assign} = require 'lodash'
+_handle_error = require "#{__dirname}/helpers/_handle_error"
 _build_query = require "#{__dirname}/helpers/_build_query"
+act = require "#{__dirname}/../seneca/act"
 
 module.exports = (args, done)->
   {model, query} = args
@@ -17,7 +20,7 @@ module.exports = (args, done)->
       done null, err: builtErr
   else
     # Save the raw query for later logging
-    raw_query = assign {}, query
+    raw_query = if query != 'all' then assign {}, query else 'all'
 
     # Build and run the query
     _build_query query, model
