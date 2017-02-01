@@ -1,4 +1,6 @@
 _build_query = require "#{__dirname}/helpers/_build_query"
+_handle_error = require "#{__dirname}/helpers/_handle_error"
+act = require "#{__dirname}/../seneca/act"
 module.exports = (args, done) ->
   {model, query, changes} = args
   if !model or !query or !changes
