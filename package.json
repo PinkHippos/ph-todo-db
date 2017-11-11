@@ -2,6 +2,10 @@
   "name": "ph-todo-db",
   "version": "0.1.0",
   "description": "DB worker for the ph-todo-example",
+  "scripts": {
+    "build": "coffee --output $PWD/build/ --compile $PWD/src/",
+    "start": "node build/provision.js && node build/index.js"
+  },
   "main": "index.js",
   "repository": "https://github.com/PinkHippos/ph-todo-db.git",
   "author": "chippawah <charles.cantrell@me.com>",
@@ -18,5 +22,10 @@
     "seneca-legacy-logger": "^0.1.0",
     "tcp-ping": "^0.1.1",
     "thinky": "^2.3.8"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coffeescript": "^2.0.2",
+    "mocha": "^4.0.1"
   }
 }
