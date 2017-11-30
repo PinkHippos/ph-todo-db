@@ -20,7 +20,7 @@ _parse_query = (raw_query)->
 # @params: filters -> obj || [obj]
 # @returns: query base with filters chained on
 _format_filters = (filters, base)->
-  filtered_base = assign {}, base
+  filtered_base = base
   if Array.isArray filters
     for filter in filters
       filtered_base = filtered_base.filter filter
